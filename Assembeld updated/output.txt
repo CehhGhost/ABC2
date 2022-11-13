@@ -1,0 +1,2 @@
+Minimum symb: A
+Maximum symb: Z
