@@ -18,10 +18,10 @@ get_maxsymb_and_minsymb:
 	movzx	edx, BYTE PTR [rax]
 	mov	rax, QWORD PTR -48[rbp]
 	mov	BYTE PTR [rax], dl
-	mov	r11d, 1				# r11d = i = 1 в цикле for()
+	mov	r14d, 1				# r14d = i = 1 в цикле for()
 	jmp	.L2
 .L5:	# цикл for()
-	mov	eax, r11d			# eax = i
+	mov	eax, r14d			# eax = i
 	movsx	rdx, eax
 	mov	rax, QWORD PTR -24[rbp]
 	add	rax, rdx
@@ -43,9 +43,9 @@ get_maxsymb_and_minsymb:
 	movzx	edx, BYTE PTR -5[rbp]
 	mov	BYTE PTR [rax], dl		# *min = symb
 .L4:
-	add	r11d, 1				# ++i
+	add	r14d, 1				# ++i
 .L2:
-	mov	eax, r11d			# eax = i
+	mov	eax, r14d			# eax = i
 	cmp	eax, DWORD PTR -28[rbp]		# i < size
 	jl	.L5
 	nop
