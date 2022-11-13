@@ -13,4 +13,4 @@
 ручного редактирования исходного текста ассемблерной программы:
 * [main_updated.s](https://github.com/CehhGhost/ABC2/blob/main/Assembeld%20updated/main_updated.s)
 * [get_maxsymb_and_minsymb_updated.s](https://github.com/CehhGhost/ABC2/blob/main/Assembeld%20updated/get_maxsymb_and_minsymb_updated.s)
-#### [Список изменений](https://github.com/CehhGhost/ABC1/blob/main/Assembeld%20updated/Changes.md)
+#### [Список изменений](https://github.com/CehhGhost/ABC2/blob/main/Assembeld%20updated/Changes.md)
