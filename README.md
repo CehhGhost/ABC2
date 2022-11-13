@@ -15,5 +15,5 @@
 * [get_maxsymb_and_minsymb_updated.s](https://github.com/CehhGhost/ABC2/blob/main/Assembeld%20updated/get_maxsymb_and_minsymb_updated.s)
 #### [Список изменений](https://github.com/CehhGhost/ABC2/blob/main/Assembeld%20updated/Changes.md)
 ### 4) тестирование
-> [ссылка на тесты](https://github.com/CehhGhost/ABC1/blob/main/tests.md)
+> [ссылка на тесты](https://github.com/CehhGhost/ABC2/blob/main/tests.md)
 > <br> При просмотре тестов можно заметить, что программа до модификаций и после работает одинаково и без ошибок => модификации установленны верно
