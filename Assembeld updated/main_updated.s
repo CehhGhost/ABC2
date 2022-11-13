@@ -230,14 +230,14 @@ main:
 	jne	.L12
 	mov	edi, 10
 	call	putchar@PLT
-	mov	r11d, 0				# r11d = i в for {printf(); scanf();}
+	mov	r14d, 0				# r14d = i в for {printf(); scanf();}
 	jmp	.L13
 .L14:	# цикл for {printf(); scanf();}
-	mov	esi, r11d			# esi = i
+	mov	esi, r14d			# esi = i
 	lea	rdi, .LC10[rip]
 	mov	eax, 0
 	call	printf@PLT
-	mov	eax, r11d			# eax = i
+	mov	eax, r14d			# eax = i
 	movsx	rdx, eax
 	mov	rax, QWORD PTR -72[rbp]
 	add	rax, rdx
@@ -245,10 +245,10 @@ main:
 	lea	rdi, .LC11[rip]
 	mov	eax, 0
 	call	__isoc99_scanf@PLT
-	add	r11d, 1				# ++i
+	add	r14d, 1				# ++i
 .L13:
 	mov	eax, DWORD PTR -108[rbp]	# eax = size
-	cmp	r11d, eax			# i < eax
+	cmp	r14d, eax			# i < eax
 	jl	.L14
 	mov	esi, DWORD PTR -108[rbp]	# esi = size для передачи в get_maxsymb_and_minsymb(line, size, &min, &max)
 	lea	rcx, -118[rbp]			# rcx = &max для передачи в get_maxsymb_and_minsymb(line, size, &min, &max)
