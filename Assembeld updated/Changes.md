@@ -14,25 +14,25 @@ gcc -masm=intel \
 > <br> - mov	rbx, rax
 > <br> + mov	rbx, rsp
 
-> \- mov	rax, QWORD PTR -88[rbp]
+> \- mov	rax, DWORD PTR -88[rbp]
 > <br> - mov	rdi, rax
-> <br> + mov	rdi, QWORD PTR -88[rbp]
+> <br> + mov	rdi, DWORD PTR -88[rbp]
 
-> \- mov	rax, QWORD PTR -104[rbp]
+> \- mov	rax, DWORD PTR -104[rbp]
 > <br> - mov	rdi, rax
-> <br> + mov	rdi, QWORD PTR -104[rbp]
+> <br> + mov	rdi, DWORD PTR -104[rbp]
 
-> \- mov	eax, QWORD PTR -56[rbp]
+> \- mov	eax, DWORD PTR -56[rbp]
 > <br> - mov	esi, eax
-> <br> + mov	esi, QWORD PTR -56[rbp]
+> <br> + mov	esi, DWORD PTR -56[rbp]
 
-> \- mov	rax, QWORD PTR -72[rbp]
+> \- mov	rax, DWORD PTR -72[rbp]
 > <br> - mov	rdi, rax
-> <br> + mov	rdi, QWORD PTR -72[rbp]
+> <br> + mov	rdi, DWORD PTR -72[rbp]
 
-> \- mov	eax, QWORD PTR -52[rbp]
+> \- mov	eax, DWORD PTR -52[rbp]
 > <br> - mov	esi, eax
-> <br> + mov	esi, QWORD PTR -52[rbp]
+> <br> + mov	esi, DWORD PTR -52[rbp]
 
 ## <br> Так же во всех файлах удалены:
 > endbr64
